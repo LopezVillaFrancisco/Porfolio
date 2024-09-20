@@ -21,7 +21,8 @@ const Experiencia: React.FC<ExperienciaProps> = ({ isEnglish }) => {
           </p>
           <a 
             href="https://allxskills.netlify.app/"
-            className="text-blue-500 hover:underline flex items-center justify-center md:justify-start gap-1"
+            className="text-blue-500 hover:underline flex items-center justify-center md:justify-start gap-1" 
+            target='_blank'
           >
             {isEnglish ? 'View project' : 'Ver proyecto'} <FaExternalLinkAlt size={16} />
           </a>
