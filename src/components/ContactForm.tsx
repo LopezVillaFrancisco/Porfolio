@@ -22,8 +22,8 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contacto" className="p-8 rounded-lg">
-      <h2 className="text-3xl font-semibold mb-4 text-orange-500">Contacto</h2>
+    <section id="contacto" className="p-8 pt-10 rounded-lg">
+      <h2 className="text-4xl font-semibold mb-8 text-center text-orange-500">Contacto</h2>
       <p className="text-gray-300 mb-6">Puedes contactarme a través del siguiente formulario o en las redes sociales.</p>
       <form
         action="https://formspree.io/f/mblrbpaq"
