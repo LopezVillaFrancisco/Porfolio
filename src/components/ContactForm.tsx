@@ -1,7 +1,11 @@
 'use client';
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 
-const ContactForm = () => {
+interface ContactFormProps {
+  isEnglish: boolean;
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({ isEnglish }) => {
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -23,8 +27,14 @@ const ContactForm = () => {
 
   return (
     <section id="contacto" className="p-8 pt-10 rounded-lg">
-      <h2 className="text-4xl font-semibold mb-8 text-center text-orange-500">Contacto</h2>
-      <p className="text-gray-300 mb-6">Puedes contactarme a través del siguiente formulario o en las redes sociales.</p>
+      <h2 className="text-4xl font-semibold mb-8 text-center text-orange-500">
+        {isEnglish ? 'Contact' : 'Contacto'}
+      </h2>
+      <p className="text-gray-300 mb-6">
+        {isEnglish 
+          ? 'You can contact me through the following form or on social media.'
+          : 'Puedes contactarme a través del siguiente formulario o en las redes sociales.'}
+      </p>
       <form
         action="https://formspree.io/f/mblrbpaq"
         method="POST"
@@ -32,7 +42,9 @@ const ContactForm = () => {
         className="space-y-6"
       >
         <div>
-          <label htmlFor="nombre" className="block text-gray-300">Nombre</label>
+          <label htmlFor="nombre" className="block text-gray-300">
+            {isEnglish ? 'Name' : 'Nombre'}
+          </label>
           <input
             type="text"
             id="nombre"
@@ -44,7 +56,9 @@ const ContactForm = () => {
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-gray-300">Correo Electrónico</label>
+          <label htmlFor="email" className="block text-gray-300">
+            {isEnglish ? 'Email Address' : 'Correo Electrónico'}
+          </label>
           <input
             type="email"
             id="email"
@@ -56,7 +70,9 @@ const ContactForm = () => {
           />
         </div>
         <div>
-          <label htmlFor="mensaje" className="block text-gray-300">Mensaje</label>
+          <label htmlFor="mensaje" className="block text-gray-300">
+            {isEnglish ? 'Message' : 'Mensaje'}
+          </label>
           <textarea
             id="mensaje"
             name="mensaje"
@@ -71,7 +87,7 @@ const ContactForm = () => {
           type="submit"
           className="bg-orange-500 text-white px-6 w-full py-3 rounded-lg hover:bg-orange-700 transition-colors mb-8" 
         >
-          Enviar
+          {isEnglish ? 'Send' : 'Enviar'}
         </button> 
         <div className='pb-4'/>
       </form>
