@@ -20,7 +20,7 @@ const Experiencia: React.FC<ExperienciaProps> = ({ isEnglish }) => {
             {isEnglish ? 'Freelance web development work with various technologies.' : 'Trabajo en desarrollo web freelance con diversas tecnologías.'}
           </p>
           <a 
-            href="#"
+            href="https://allxskills.netlify.app/"
             className="text-blue-500 hover:underline flex items-center justify-center md:justify-start gap-1"
           >
             {isEnglish ? 'View project' : 'Ver proyecto'} <FaExternalLinkAlt size={16} />
