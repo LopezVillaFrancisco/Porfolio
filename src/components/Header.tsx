@@ -14,7 +14,7 @@ const Header: React.FC<{ onLanguageChange: (isEnglish: boolean) => void }> = ({ 
   return (
     <div className=''>
       <header className="py-4 px-16 flex justify-between items-center text-white">
-        <h1 className="text-3xl font-bold">Francisco López Villa</h1>
+        <h1 className="text-xl font-bold md:text-3xl">Francisco López Villa</h1>
         <div className="flex items-center">
           <Switch 
             onChange={handleLanguageChange} 
