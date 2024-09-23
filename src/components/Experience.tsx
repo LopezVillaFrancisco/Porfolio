@@ -36,8 +36,8 @@ const Experiencia: React.FC<ExperienciaProps> = ({ isEnglish }) => {
           </p>
           <p className="text-lg">
             {isEnglish 
-              ? 'Junior Developer in Next JS working on creating modern web applications. Using technologies like React, Next JS, and Tailwind CSS.' 
-              : 'Desarrollador Junior en Next JS trabajando en la creación de aplicaciones web modernas. Utilización de tecnologías como React, Next JS, y Tailwind CSS.'}
+              ? 'Contract-based role for a specific project as a Junior Developer in Next JS, working on creating modern web applications. Using technologies like React, Next JS, and Tailwind CSS.' 
+              : 'Contratación por proyecto como Desarrollador Junior en Next JS, trabajando en la creación de aplicaciones web modernas. Utilización de tecnologías como React, Next JS y Tailwind CSS.'}
           </p>
         </div>
       </div>
