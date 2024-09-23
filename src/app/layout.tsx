@@ -7,27 +7,8 @@ const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio Francisco Lopez Villa",
-  description: "Portfolio Francisco Lopez Villa",
-  openGraph: {
-    title: "Portfolio Francisco Lopez Villa",
-    description: "Mirá mis proyectos y experiencia como desarrollador web.",
-    url: "https://franciscolopezvilla.netlify.app/",
-    type: "website",
-    images: [
-      {
-        url: "/portada.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Imagen de portada del portfolio de Francisco Lopez Villa",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Portfolio Francisco Lopez Villa",
-    description: "Mirá mis proyectos y experiencia como desarrollador web.",
-    images: ["/portada.jpeg"],
-  },
+  description: "Portfolio de Francisco Lopez Villa, desarrollador frontend especializado en React y Next.js. Aquí encontrarás mis proyectos y habilidades.",
+  keywords: "portfolio, Francisco Lopez Villa, desarrollador web, React, Next.js",
 };
 
 export default function RootLayout({
