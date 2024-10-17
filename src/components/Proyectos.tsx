@@ -10,7 +10,7 @@ const proyectosData = [
     imagen: AllxSkills, 
     descripcion: {
       es: 'Proyecto freelance en el cual se utilizó React y CSS para seguir las guías de un diseño de Figma.',
-      en: 'Freelance project where React and CSS were used to follow the guidelines of a Figma design.'
+      en: "Freelance project where React and CSS were used following the guidelines of a Figma design."
     },
     tecnologias: ['React', 'CSS'],
     enlaceWeb: 'https://allxskills.netlify.app/',
@@ -58,7 +58,8 @@ const Proyectos: React.FC<ProyectosProps> = ({ isEnglish }) => {
             descripcion={isEnglish ? proyecto.descripcion.en : proyecto.descripcion.es}
             tecnologias={proyecto.tecnologias}
             enlaceWeb={proyecto.enlaceWeb}
-            enlaceGithub={proyecto.enlaceGithub}
+            enlaceGithub={proyecto.enlaceGithub} 
+            isEnglish = {isEnglish}
           />
         ))}
       </div>
