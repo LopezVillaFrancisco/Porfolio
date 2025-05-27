@@ -8,7 +8,7 @@ interface ExperienciaProps {
 const Experiencia: React.FC<ExperienciaProps> = ({ isEnglish }) => {
   return (
     <section className="text-white py-12 px-4 md:px-12" id='experiencia'>
-      <h1 className="text-4xl font-semibold mb-8 text-center text-orange-500">
+      <h1 className="text-4xl font-semibold mb-8 text-center text-cyan-500">
         {isEnglish ? 'Experience' : 'Experiencia'}
       </h1>
       <div className="max-w-4xl mx-auto">

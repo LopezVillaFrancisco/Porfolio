@@ -35,12 +35,12 @@ const Proyecto = ({ imagen, descripcion, tecnologias, enlaceWeb, enlaceGithub, i
         </div>
         <div className="flex gap-4">
           {enlaceWeb && (
-            <a href={enlaceWeb} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-blue-400 hover:text-blue-300">
+            <a href={enlaceWeb} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-blue-300 hover:text-blue-300">
               <Globe size={20} /> {isEnglish ? "View on Web" : "Ver en Web"}
             </a>
           )}
           {enlaceGithub && (
-            <a href={enlaceGithub} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-400 hover:text-gray-300">
+            <a href={enlaceGithub} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-300 hover:text-gray-300">
               <Github size={20} /> {isEnglish ? "View on Github" : "Ver en Github"}
             </a>
           )}

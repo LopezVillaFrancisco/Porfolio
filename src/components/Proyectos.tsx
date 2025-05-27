@@ -47,7 +47,7 @@ interface ProyectosProps {
 const Proyectos: React.FC<ProyectosProps> = ({ isEnglish }) => {
   return (
     <section className="py-12 px-4 md:px-12 text-white" id='projects'>
-      <h2 className="text-4xl font-semibold mb-8 text-center text-orange-500">
+      <h2 className="text-4xl font-semibold mb-8 text-center text-cyan-500">
         {isEnglish ? 'Projects' : 'Proyectos'}
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

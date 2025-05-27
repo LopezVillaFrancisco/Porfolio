@@ -11,7 +11,7 @@ const Hero: React.FC<HeroProps> = ({ isEnglish }) => {
   return (
     <section className="flex flex-col items-center justify-center py-8 text-white px-4 md:px-12 w-full" id='home'>
       <div className="max-w-2xl">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-orange-500">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-cyan-500">
           {isEnglish ? 'Frontend Developer' : 'Desarrollador Frontend'}
         </h1>
         <p className="text-left md:text-lg">

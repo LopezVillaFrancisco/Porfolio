@@ -82,7 +82,7 @@ interface EducationProps {
 const Education: React.FC<EducationProps> = ({ isEnglish }) => {
   return (
     <section className="py-10 px-4 md:px-12 text-white" id="education">
-      <h2 className="text-3xl font-semibold mb-6 text-center text-orange-500">
+      <h2 className="text-3xl font-semibold mb-6 text-center text-cyan-500">
         {isEnglish ? 'Education' : 'Educación'}
       </h2>
       <div className="space-y-6">
@@ -92,14 +92,14 @@ const Education: React.FC<EducationProps> = ({ isEnglish }) => {
             className="border border-gray-700 p-4 rounded-md"
           >
             <div
-              className={`mb-1 ${group.isMain ? 'text-2xl font-bold' : 'text-sm font-semibold text-gray-300'}`}
+              className={`mb-1 ${group.isMain ? 'text-2xl font-bold' : 'text-sm font-semibold text-gray-200'}`}
             >
               {group.institution}
             </div>
-            <div className={`${group.isMain ? 'text-sm text-gray-300' : 'text-xs text-gray-400'} mb-3`}>
+            <div className={`${group.isMain ? 'text-sm text-gray-200' : 'text-xs text-gray-300'} mb-3`}>
               {group.year}
             </div>
-            <div className={`grid grid-cols-1 ${group.isMain ? 'text-base' : 'md:grid-cols-2 gap-y-2 text-xs text-gray-300'}`}>
+            <div className={`grid grid-cols-1 ${group.isMain ? 'text-base' : 'md:grid-cols-2 gap-y-2 text-xs text-gray-200'}`}>
               {group.courses.map((course, idx) => (
                 <div key={idx}>
                   <strong>{isEnglish ? course.title.en : course.title.es}</strong>
