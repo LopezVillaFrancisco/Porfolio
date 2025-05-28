@@ -14,19 +14,19 @@ const Hero: React.FC<HeroProps> = ({ isEnglish }) => {
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-cyan-500">
           {isEnglish ? 'Frontend Developer' : 'Desarrollador Frontend'}
         </h1>
-        <p className="text-left md:text-lg">
-          {isEnglish 
-            ? 'I am a Frontend Developer specializing in React and Next.js. I enjoy creating modern and efficient interfaces that provide smooth experiences. I seek challenging projects where I can apply my skills to solve problems innovatively.' 
-            : 'Soy un desarrollador Frontend especializado en React y Next.js. Disfruto de crear interfaces modernas y eficientes que ofrezcan experiencias fluidas. Busco proyectos desafiantes donde pueda aplicar mis habilidades para resolver problemas de forma innovadora.'}
-        </p> 
+     <p className="text-left md:text-lg">
+  {isEnglish
+    ? 'Frontend developer with experience in React and Next.js, focused on building modern interfaces and solving real problems through practical and efficient solutions.'
+    : 'Desarrollador frontend con experiencia en React y Next.js, enfocado en construir interfaces modernas y resolver problemas reales con soluciones prácticas y eficientes.'}
+</p>
         <div className='flex mt-4 gap-4'>
-          <Link href={'https://www.linkedin.com/in/francisco-lopez-villa-91b317260/'} className='flex gap-1 flex-row border p-1 bg-[#0A66C2] px-2 rounded-xl' target='_blank'>
+          <Link href={'https://www.linkedin.com/in/francisco-lopez-villa-91b317260/'} className='flex gap-1 flex-row border p-1 bg-[#0A66C2] px-2 rounded-xl' target='_blank' rel="noopener noreferrer">
             <CiLinkedin size={26} color=''/> 
-            <span>Linkedin</span>
+            <span>LinkedIn</span>
           </Link> 
-          <Link href={'https://github.com/LopezVillaFrancisco'} className='flex gap-1 flex-row border p-1 bg-[#6C757D] px-2 rounded-xl' target='_blank'>
+          <Link href={'https://github.com/LopezVillaFrancisco'} className='flex gap-1 flex-row border p-1 bg-[#6C757D] px-2 rounded-xl' target='_blank' rel="noopener noreferrer">
             <FaGithub size={26} color=''/> 
-            <span>Github</span>
+            <span>GitHub</span>
           </Link>
         </div>
       </div>
